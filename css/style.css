@@ -17,7 +17,7 @@
     padding: 7px;
     margin-left: -168px;
     margin-top: -18px;
-     
+}
 .img-curve{
     border-radius: 15px;
 }
@@ -107,7 +107,7 @@ fieldset{
 }
 
 
-/* CSS for Food Search Section */
+/* CSS for Food SEarch Section */
 
 .food-search{
     background-image: url(../images/b.bg.png);
