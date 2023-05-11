@@ -9,6 +9,9 @@
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="M3BmILiOrW7iZgJvN"></script>
+    <script src="cafe.js"></script>
 </head>
 
 <body>
@@ -53,9 +56,9 @@
                 <h1>Table Reservation</h1>
                 <br>
                 Name:&nbsp; <input id="name" type="text" name="name">
-              Date: &nbsp;<input type="date" name="Date">
-              Time: &nbsp;<input type="Time" name="Time"><br>
-              Event:&nbsp; <select name="Event">       
+              Date: &nbsp;<input type="date" name="Date" id="date">
+              Time: &nbsp;<input type="Time" name="Time" id="time"><br>
+              Event:&nbsp; <select name="Event" id="event">       
                 <br>
                   <option value="Birthday" selected="selected">Birthday</option>
                   <option value="Reception">Reception</option>
@@ -63,7 +66,7 @@
                   <option value="Other">Other</option>
               </select></br>
               Members:&nbsp;<input id="members" type="text" name="Members">
-              Advance: &nbsp;<select id="Advance" name="Advance">
+              Advance: &nbsp;<select id="advance" name="Advance">
                   <option>50Rs</option>
                   <option>100Rs</option>
                   <option>200Rs</option>
