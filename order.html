@@ -9,6 +9,28 @@
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <!-- <script src=""></script> -->
+    <script src="onlineorder.js"></script>
+    <style>
+        body,
+        h2,
+        .order-label {
+            color: white;
+        }
+       
+    .order-column {
+        display: inline-block;
+    }
+
+    .small-column {
+        width: 30%;
+        margin-left: 10px;
+    }
+    
+    </style>
+
+
 </head>
 
 <body>
@@ -48,44 +70,94 @@
         <div class="container">
             
             <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
+            <h4 class="text-center text-white">*Max 3 Items Per Order</h4>
+
 
             <form action="#" class="order">
                 <fieldset>
-                    <legend>Selected Food</legend>
-
-                    <div class="food-menu-img">
-                        <img src="images/menu-icecream.jpeg" alt="Vanilla icecream" class="img-responsive img-curve">
-                    </div>
-    
-                    <div class="food-menu-desc">
-                        <h3>Vanilla Icecream</h3>
-                        <p class="food-price">Rs 200</p>
-
-                        <div class="order-label">Quantity</div>
-                        <input type="number" name="qty" class="input-responsive" value="1" required>
-                        
-                    </div>
-
-                </fieldset>
-                
-                <fieldset>
                     <legend>Delivery Details</legend>
-                    <div class="order-label">Full Name</div>
-                    <input type="text" name="full-name" placeholder="E.g. Ritesh Mishra" class="input-responsive" required>
-
-                    <div class="order-label">Phone Number</div>
-                    <input type="tel" name="contact" placeholder="E.g. 9372xxxxxx" class="input-responsive" required>
-
-                    <div class="order-label">Email</div>
-                    <input type="email" name="email" placeholder="E.g. Ritesh@email.com" class="input-responsive" required>
-
-                    <div class="order-label">Address</div>
-                    <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
-
-                    <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
-                </fieldset>
-
+            
+            
+                    <div class="order-column">
+                        <label for="food">Item 1:</label>
+                        <select name="food" id="food1" class="input-responsive" required>
+                            <option value="nil" selected id="nil">Nil</option>
+                            <option value="Fudge Brownie" id="brown">Fudge Brownie</option>
+                            <option value="Cookies" id="cook">Cookies</option>
+                            <option value="Cappuccino" id="cino">Cappuccino</option>
+                            <option value="Latte Coffee" id="lc">Latte Coffee</option>
+                            <option value="Ice Cream" id="ic">Ice Cream</option>
+                            <option value="Magique Pastry" id="mp">Magique Pastry</option>
+                        </select>
+                    </div>
+                    <div class="order-column small-column">
+                        <label for="qty">Quantity:</label>
+                        <input type="number" name="qty" class="input-responsive" value="1" id="qty1" required>
+                    </div>
+                    
+                    <div class="order-column">
+                        <label for="food">Item 2:</label>
+                        <select name="food" id="food2" class="input-responsive" required>
+                           <option value="nil" selected id="nil">Nil</option>
+                            <option value="Fudge Brownie" id="brown">Fudge Brownie</option>
+                            <option value="Cookies" id="cook">Cookies</option>
+                            <option value="Cappuccino" id="cino">Cappuccino</option>
+                            <option value="Latte Coffee" id="lc">Latte Coffee</option>
+                            <option value="Ice Cream" id="ic">Ice Cream</option>
+                            <option value="Magique Pastry" id="mp">Magique Pastry</option>
+                        </select>
+                    </div>
+                    <div class="order-column small-column">
+                        <label for="qty">Quantity:</label>
+                        <input type="number" name="qty" class="input-responsive" value="1" id="qty2" required>
+                    </div>
+                    <div class="order-column">
+                        <label for="food">Item 3:</label>
+                        <select name="food" id="food3" class="input-responsive" required>
+                            <option value="nil" selected id="nil">Nil</option>
+                            <option value="Fudge Brownie" id="brown">Fudge Brownie</option>
+                            <option value="Cookies" id="cook">Cookies</option>
+                            <option value="Cappuccino" id="cino">Cappuccino</option>
+                            <option value="Latte Coffee" id="lc">Latte Coffee</option>
+                            <option value="Ice Cream" id="ic">Ice Cream</option>
+                            <option value="Magique Pastry" id="mp">Magique Pastry</option>
+                        </select>
+                    </div>
+                    <div class="order-column small-column">
+                        <label for="qty">Quantity:</label>
+                        <input type="number" name="qty" class="input-responsive" value="1" id="qty3" required>
+                    </div>
+                    
+                
+            
+                    <div class="order-column">
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="full-name" placeholder="E.g. Ritesh Mishra" class="input-responsive" id="name" required>
+                    </div>
+            
+                    <div class="order-column">
+                        <label for="contact">Phone Number:</label>
+                        <input type="tel" name="contact" placeholder="E.g. 9372xxxxxx" class="input-responsive" id="tel" required>
+                    </div>
+            
+                    <div class="order-column">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="E.g. Ritesh@email.com" class="input-responsive" id="email" required>
+                    </div><br>
+            
+                    <div class="order-column">
+                        <label for="address">Address:</label>
+                        <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" id="address" required></textarea>
+                    </div>
+                    <br>
+                
+            
+                        <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary" id="confirm">
+                    </fieldset>
             </form>
+           
+            
+                
 
         </div>
     </section>
