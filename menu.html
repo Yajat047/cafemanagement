@@ -1,264 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!-- Important to make website responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Roasting Room</title>
 
-    <!-- Link our CSS file -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <style>
-        table, th, td {
-          border: 3px solid black;
-          border-collapse: collapse;
-        }
-        
-        tr:nth-child(even) {
-          background-color: rgba(150, 212, 212, 0.4);
-        }
-        
-        th:nth-child(even),td:nth-child(even) {
-          background-color: rgba(150, 212, 212, 0.4);
-        }
-        </style>
+<head>
+  <meta charset="UTF-8">
+  <!-- Important to make website responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Roasting Room</title>
+
+  <!-- Link our CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <style>
+    table,
+    th,
+    td {
+      border: 3px solid black;
+      border-collapse: collapse;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(150, 212, 212, 0.4);
+    }
+
+    th:nth-child(even),
+    td:nth-child(even) {
+      background-color: rgba(150, 212, 212, 0.4);
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Navbar Section Starts Here -->
-    <section class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="./index.html" title="Logo">
-                    <img src="./images/trrlogo.png" alt="The Roasting Room Logo" class="img-responsive-logo">
-                </a>
-            </div>
+  <!-- Navbar Section Starts Here -->
+  <section class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="./index.html" title="Logo">
+          <img src="./images/trrlogo.png" alt="The Roasting Room Logo" class="img-responsive-logo">
+        </a>
+      </div>
 
-            <div class="menu text-right">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="foods.html">Foods</a>
-                    </li>
-                    <li>
-                        <a href="menu.html">Menu</a>
-                    </li>
-                    <li>
-                        <a href="reservation.html">Reservation</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="menu text-right">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="foods.html">Specialities</a>
+          </li>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="reservation.html">Reservation</a>
+          </li>
+        </ul>
+      </div>
 
-            <div class="clearfix"></div>
-        </div>
-    </section>
-    <!-- Navbar Section Ends Here -->
+      <div class="clearfix"></div>
+    </div>
+  </section>
+  <!-- Navbar Section Ends Here -->
+  <section class="food-search text-center">
+    <div class="container">
 
-    <!-- fOOD sEARCH Section Starts Here -->
-    <section class="food-search text-center">
-        <div class="container">
-            
-            <form action="food-search.html" method="POST">
-                <input type="search" name="search" placeholder="Search for Cake, coffee or drinks.." required>
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
-            </form>
+          <h1 style="color: #ff6b81; font-size: 50px;">The Roasting Room</h1>
+    </div>
+</section>
+  <!-- fOOD MEnu Section Starts Here -->
+  <section class="food-menu">
+    <div class="container">
+      <h2 class="text-center">Menu</h2>
 
-        </div>
-    </section>
-    <!-- fOOD sEARCH Section Ends Here -->
-
-
-
-    <!-- fOOD MEnu Section Starts Here -->
-    <section class="food-menu">
-        <div class="container">
-            <h2 class="text-center">The Roasting Room Menu</h2>
-
-            <div class="food-menu-box">
-                <div class="food-menu-img">
-                    <img src="images/menu-fudge-brownie.jpg" alt="Fudge Brownie" class="img-responsive img-curve">
-                </div>
-
-                <div class="food-menu-desc">
-                    <h4>Fudge Brownie</h4>
-                    <p class="food-price">Rs 140</p>
-                    <p class="food-detail">
-                        Made with butter,yoghurt, dark chocolate pieces.
-                    </p>
-                    <br>
-
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
-                </div>
-            </div>
-
-            <div class="food-menu-box">
-                <div class="food-menu-img">
-                    <img src="images/menu-cookies.jpeg" alt="Cookies" class="img-responsive img-curve">
-                </div>
-
-                <div class="food-menu-desc">
-                    <h4>Cookies</h4>
-                    <p class="food-price">Rs 40</p>
-                    <p class="food-detail">
-                        Made with cocoa powder and milk.
-                    </p>
-                    <br>
-
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
-                </div>
-            </div>
-
-            <div class="food-menu-box">
-                <div class="food-menu-img">
-                    <img src="images/menu-coffee.jpeg" alt="Coffee" class="img-responsive img-curve">
-                </div>
-
-                <div class="food-menu-desc">
-                    <h4>Cappuccino</h4>
-                    <p class="food-price">Rs 150</p>
-                    <p class="food-detail">
-                        Made with milk, chocolate and vanilla.
-                    </p>
-                    <br>
-
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
-                </div>
-            </div>
-
-            <div class="food-menu-box">
-                <div class="food-menu-img">
-                    <img src="images/menu-latte-coffee.jpeg" alt="Latte Coffee" class="img-responsive img-curve">
-                </div>
-
-                <div class="food-menu-desc">
-                    <h4>Latte Coffee</h4>
-                    <p class="food-price">Rs 150</p>
-                    <p class="food-detail">
-                        Made with milk, cream beverages, espresso.
-                    </p>
-                    <br>
-
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
-                </div>
-            </div>
-
-            <div class="food-menu-box">
-                <div class="food-menu-img">
-                    <img src="images/menu-icecream.jpeg" alt="Icecream" class="img-responsive img-curve">
-                </div>
-
-                <div class="food-menu-desc">
-                    <h4>Icecream</h4>
-                    <p class="food-price">Rs 200</p>
-                    <p class="food-detail">
-                        Made with buttercream and brownsugar.
-                    </p>
-                    <br>
-
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
-                </div>
-            </div>
-
-            <div class="food-menu-box">
-                <div class="food-menu-img">
-                    <img src="images/menu-magique-Pastry.jpg" alt="Magique Pastry" class="img-responsive img-curve">
-                </div>
-
-                <div class="food-menu-desc">
-                    <h4>Magique Pastry</h4>
-                    <p class="food-price">Rs 200</p>
-                    <p class="food-detail">
-                        Made with butter, vanilla, chocolate shake.
-                    </p>
-                    <br>
-
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
-                </div>
-            </div>
-
-            <div align = "center">
-                <h2>Price list </h2>
-                <p>Budget friendly delicious food 😋😋</p>
-                <br>
-                <table>
-                    <tr>
-                      <th>Food</th>
-                      <th>Veg / Non Veg</th>
-                      <th>Price</th>
-                    </tr>
-                    <tr>
-                      <td>Fudge Brownie</td>
-                      <td>Veg 🟢</td>
-                      <td>RS 140</td>
-                    </tr>
-                    <tr>
-                      <td>Cappuccino</td>
-                      <td>Veg 🟢</td>
-                      <td>RS 150</td>
-                    </tr>
-                    <tr>
-                      <td>Icecream</td>
-                      <td>Veg 🟢</td>
-                      <td>RS 200</td>
-                    </tr>
-                    <tr>
-                      <td>Magique Pastry</td>
-                      <td>Veg 🟢</td>
-                      <td>RS 200</td>
-                    </tr>
-                    <tr>
-                      <td>Latte Coffee</td>
-                      <td>Veg 🟢</td>
-                      <td>RS 150</td>
-                    </tr>
-                    <tr>
-                      <td>Cookies</td>
-                      <td>Veg 🟢</td>
-                      <td>RS 40</td>
-                    </tr>
-                  </table>
-            </div>
-            
-            <div class="clearfix"></div>
-
-            
-
+      <div class="food-menu-box">
+        <div class="food-menu-img">
+          <img src="images/menu-fudge-brownie.jpg" alt="Fudge Brownie" class="img-responsive img-curve">
         </div>
 
-    </section>
-    <!-- food Menu Section Ends Here -->
+        <div class="food-menu-desc">
+          <h4>Fudge Brownie</h4>
+          <p class="food-price">Rs 140</p>
+          <p class="food-detail">
+            Made with butter,yoghurt, dark chocolate pieces.
+          </p>
+          <br>
 
-    <!-- social Section Starts Here -->
-    <section class="social">
-        <div class="container text-center">
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank"><img
-                            src="https://img.icons8.com/fluent/50/000000/facebook-new.png" /></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank"><img
-                            src="https://img.icons8.com/fluent/48/000000/instagram-new.png" /></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/" target="_blank"><img
-                            src="https://img.icons8.com/fluent/48/000000/twitter.png" /></a>
-                </li>
-            </ul>
+          <a href="order.html" class="btn btn-primary">Order Now</a>
         </div>
-    </section>
-    <!-- social Section Ends Here -->
+      </div>
 
-    <!-- footer Section Starts Here -->
-    <section class="footer">
-        <div class="container text-center">
-            <p>The Roasting Room website is designed, developed and hosted by Yajat Dureja, Vivek Goyal, Yajur Harit, Vrinda Verma</a></p>
+      <div class="food-menu-box">
+        <div class="food-menu-img">
+          <img src="images/menu-cookies.jpeg" alt="Cookies" class="img-responsive img-curve">
         </div>
-    </section>
-    <!-- footer Section Ends Here -->
+
+        <div class="food-menu-desc">
+          <h4>Cookies</h4>
+          <p class="food-price">Rs 40</p>
+          <p class="food-detail">
+            Made with cocoa powder and milk.
+          </p>
+          <br>
+
+          <a href="order.html" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+
+      <div class="food-menu-box">
+        <div class="food-menu-img">
+          <img src="images/menu-coffee.jpeg" alt="Coffee" class="img-responsive img-curve">
+        </div>
+
+        <div class="food-menu-desc">
+          <h4>Cappuccino</h4>
+          <p class="food-price">Rs 150</p>
+          <p class="food-detail">
+            Made with milk, chocolate and vanilla.
+          </p>
+          <br>
+
+          <a href="order.html" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+
+      <div class="food-menu-box">
+        <div class="food-menu-img">
+          <img src="images/menu-latte-coffee.jpeg" alt="Latte Coffee" class="img-responsive img-curve">
+        </div>
+
+        <div class="food-menu-desc">
+          <h4>Latte Coffee</h4>
+          <p class="food-price">Rs 150</p>
+          <p class="food-detail">
+            Made with milk, cream beverages, espresso.
+          </p>
+          <br>
+
+          <a href="order.html" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+
+      <div class="food-menu-box">
+        <div class="food-menu-img">
+          <img src="images/menu-icecream.jpeg" alt="Icecream" class="img-responsive img-curve">
+        </div>
+
+        <div class="food-menu-desc">
+          <h4>Icecream</h4>
+          <p class="food-price">Rs 200</p>
+          <p class="food-detail">
+            Made with buttercream and brownsugar.
+          </p>
+          <br>
+
+          <a href="order.html" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+
+      <div class="food-menu-box">
+        <div class="food-menu-img">
+          <img src="images/menu-magique-Pastry.jpg" alt="Magique Pastry" class="img-responsive img-curve">
+        </div>
+
+        <div class="food-menu-desc">
+          <h4>Magique Pastry</h4>
+          <p class="food-price">Rs 200</p>
+          <p class="food-detail">
+            Made with butter, vanilla, chocolate shake.
+          </p>
+          <br>
+
+          <a href="order.html" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+
+      <div align="center">
+        <h2>Price list </h2>
+        <p>Budget friendly delicious food 😋😋</p>
+        <br>
+        <table>
+          <tr>
+            <th>Food</th>
+            <th>Veg / Non Veg</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Fudge Brownie</td>
+            <td>Veg 🟢</td>
+            <td>RS 140</td>
+          </tr>
+          <tr>
+            <td>Cappuccino</td>
+            <td>Veg 🟢</td>
+            <td>RS 150</td>
+          </tr>
+          <tr>
+            <td>Icecream</td>
+            <td>Veg 🟢</td>
+            <td>RS 200</td>
+          </tr>
+          <tr>
+            <td>Magique Pastry</td>
+            <td>Veg 🟢</td>
+            <td>RS 200</td>
+          </tr>
+          <tr>
+            <td>Cookies</td>
+            <td>Veg 🟢</td>
+            <td>RS 40</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- fOOD Menu Section Ends Here -->
+
+  <!-- Social Section Starts Here -->
+  <section class="social">
+    <div class="container text-center">
+      <ul>
+        <li>
+          <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- Social Section Ends Here -->
+
+   <!-- footer Section Starts Here -->
+  <section class="footer">
+      <div class="container text-center">
+          <p>The Roasting Room website is designed, developed and hosted by Yajat Dureja, Vivek Goyal, Yajur Harit, Vrinda Verma</a></p>
+      </div>
+  </section>
+  <!-- footer Section Ends Here -->
 
 </body>
+
 </html>

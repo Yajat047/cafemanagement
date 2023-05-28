@@ -1,0 +1,89 @@
+body,
+h2,
+.order-label {
+    color: white;
+}
+
+.order-column {
+    display: inline-block;
+}
+
+.small-column {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.food-menu {
+    background-color: #ececec;
+    padding: 4% 0;
+}
+
+.food-menu-box {
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img {
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc {
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price {
+    font-size: 1.2rem;
+    margin: 2% 0;
+    color: black;
+}
+
+.food-detail {
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+.food-menu-desc h4 {
+    color: black;
+}
+
+.container2 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    color:white;
+}
+.food-menu-desc h4,
+.food-price {
+color: black;
+}  
+.form-field label {
+color: white;
+}
+.form-field label {
+color: white;
+}
+
+.form-field input[type="text"],
+.form-field input[type="tel"],
+.form-field input[type="email"]
+.form-field input[type="address"] {
+color: white;
+}
+.quantity-input {
+    border: 1px solid grey;
+    padding: 8px;
+    width: 50px; /* Adjust the width as needed */
+  }
+  
+  /* Decrease the quantity input's width on smaller screens */
+
+    .quantity-input {
+      width: 30px; /* Adjust the width as needed */
+    }

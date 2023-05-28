@@ -2,33 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Important to make website responsive -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <!-- <script src=""></script> -->
     <script src="onlineorder.js"></script>
-    <style>
-        body,
-        h2,
-        .order-label {
-            color: white;
-        }
-       
-    .order-column {
-        display: inline-block;
-    }
 
-    .small-column {
-        width: 30%;
-        margin-left: 10px;
-    }
-    
-    </style>
+
 
 
 </head>
@@ -49,7 +34,7 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="foods.html">Foods</a>
+                        <a href="foods.html">Specialities</a>
                     </li>
                     <li>
                         <a href="menu.html">Menu</a>
@@ -64,77 +49,141 @@
         </div>
     </section>
     <!-- Navbar Section Ends Here -->
+    <section class="food-menu">
+        <div class="container2">
+            <section class="food-search text-center">
+                <div class="container">
+        
+                      <h2 style="color: #ff6b81;">Menu For Online Orders</h2>
+                </div>
+            </section>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-fudge-brownie.jpg" alt="Fudge Brownie" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Fudge Brownie</h4>
+                    <p class="food-price">Rs 140</p>
+                    <p class="food-detail">
+                        Made with butter, yogurt, dark chocolate pieces.
+                    </p>
+                    <br>
+
+                    <input type="number" name="quantity" class="input-responsive quantity-input" value="0" min="0">
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-cookies.jpeg" alt="Cookies" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Cookies</h4>
+                    <p class="food-price">Rs 40</p>
+                    <p class="food-detail">
+                        Made with cocoa powder and milk.
+                    </p>
+                    <br>
+
+                    <input type="number" name="quantity" class="input-responsive quantity-input" value="0" min="0">
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-coffee.jpeg" alt="Coffee" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Cappuccino</h4>
+                    <p class="food-price">Rs 150</p>
+                    <p class="food-detail">
+                        Made with milk, chocolate, and vanilla.
+                    </p>
+                    <br>
+
+                    <input type="number" name="quantity" class="input-responsive quantity-input" value="0" min="0">
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-latte-coffee.jpeg" alt="Latte Coffee" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Latte Coffee</h4>
+                    <p class="food-price">Rs 150</p>
+                    <p class="food-detail">
+                        Made with milk, cream beverages, espresso.
+                    </p>
+                    <br>
+
+                    <input type="number" name="quantity" class="input-responsive quantity-input" value="0" min="0">
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-icecream.jpeg" alt="Icecream" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Icecream</h4>
+                    <p class="food-price">Rs 200</p>
+                    <p class="food-detail">
+                        Made with buttercream and brown sugar.
+                    </p>
+                    <br>
+
+                    <input type="number" name="quantity" class="input-responsive quantity-input" value="0" min="0">
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-magique-Pastry.jpg" alt="Magique Pastry" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Magique Pastry</h4>
+                    <p class="food-price">Rs 200</p>
+                    <p class="food-detail">
+                        Made with butter, vanilla, chocolate shake.
+                    </p>
+                    <br>
+
+                    <input type="number" name="quantity" class="input-responsive quantity-input" value="0" min="0">
+                </div>
+            </div>
 
     <!-- fOOD search Section Starts Here -->
     <section class="food-search">
         <div class="container">
             
-            <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
-            <h4 class="text-center text-white">*Max 3 Items Per Order</h4>
+            <h2 class="text-center" style="color: #ff6b81;">Fill this form to complete your order:</h2>
+
+           
 
 
-            <form action="#" class="order">
+            <form id="order-form" action="#" class="order" onsubmit="sendEmail(); return false;">
+
+
                 <fieldset>
                     <legend>Delivery Details</legend>
             
             
-                    <div class="order-column">
-                        <label for="food">Item 1:</label>
-                        <select name="food" id="food1" class="input-responsive" required>
-                            <option value="nil" selected id="nil">Nil</option>
-                            <option value="Fudge Brownie" id="brown">Fudge Brownie</option>
-                            <option value="Cookies" id="cook">Cookies</option>
-                            <option value="Cappuccino" id="cino">Cappuccino</option>
-                            <option value="Latte Coffee" id="lc">Latte Coffee</option>
-                            <option value="Ice Cream" id="ic">Ice Cream</option>
-                            <option value="Magique Pastry" id="mp">Magique Pastry</option>
-                        </select>
-                    </div>
-                    <div class="order-column small-column">
-                        <label for="qty">Quantity:</label>
-                        <input type="number" name="qty" class="input-responsive" value="1" id="qty1" required>
-                    </div>
-                    
-                    <div class="order-column">
-                        <label for="food">Item 2:</label>
-                        <select name="food" id="food2" class="input-responsive" required>
-                           <option value="nil" selected id="nil">Nil</option>
-                            <option value="Fudge Brownie" id="brown">Fudge Brownie</option>
-                            <option value="Cookies" id="cook">Cookies</option>
-                            <option value="Cappuccino" id="cino">Cappuccino</option>
-                            <option value="Latte Coffee" id="lc">Latte Coffee</option>
-                            <option value="Ice Cream" id="ic">Ice Cream</option>
-                            <option value="Magique Pastry" id="mp">Magique Pastry</option>
-                        </select>
-                    </div>
-                    <div class="order-column small-column">
-                        <label for="qty">Quantity:</label>
-                        <input type="number" name="qty" class="input-responsive" value="1" id="qty2" required>
-                    </div>
-                    <div class="order-column">
-                        <label for="food">Item 3:</label>
-                        <select name="food" id="food3" class="input-responsive" required>
-                            <option value="nil" selected id="nil">Nil</option>
-                            <option value="Fudge Brownie" id="brown">Fudge Brownie</option>
-                            <option value="Cookies" id="cook">Cookies</option>
-                            <option value="Cappuccino" id="cino">Cappuccino</option>
-                            <option value="Latte Coffee" id="lc">Latte Coffee</option>
-                            <option value="Ice Cream" id="ic">Ice Cream</option>
-                            <option value="Magique Pastry" id="mp">Magique Pastry</option>
-                        </select>
-                    </div>
-                    <div class="order-column small-column">
-                        <label for="qty">Quantity:</label>
-                        <input type="number" name="qty" class="input-responsive" value="1" id="qty3" required>
-                    </div>
+                  
                     
                 
             
                     <div class="order-column">
                         <label for="name">Full Name:</label>
-                        <input type="text" name="full-name" placeholder="E.g. Ritesh Mishra" class="input-responsive" id="name" required>
+                        <input type="text" name="full-name" placeholder="E.g. Ram Sharma" class="input-responsive" id="name" required>
                     </div>
-            
                     <div class="order-column">
                         <label for="contact">Phone Number:</label>
                         <input type="tel" name="contact" placeholder="E.g. 9372xxxxxx" class="input-responsive" id="tel" required>
@@ -142,12 +191,12 @@
             
                     <div class="order-column">
                         <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="E.g. Ritesh@email.com" class="input-responsive" id="email" required>
+                        <input type="email" name="email" placeholder="E.g. abc@email.com" class="input-responsive" id="email" required>
                     </div><br>
             
                     <div class="order-column">
                         <label for="address">Address:</label>
-                        <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" id="address" required></textarea>
+                        <textarea name="address" rows="10" placeholder="E.g. House No., Street, City" class="input-responsive" id="address" required></textarea>
                     </div>
                     <br>
                 
@@ -187,7 +236,7 @@
     <!-- footer Section Starts Here -->
     <section class="footer">
         <div class="container text-center">
-            <p>The Roasting Room website is designed, developed and hosted by Yajat Dureja, Vivek Goyal, Yajur Harit, Vrinda Verma</a></p>
+            <p style="color: black;">The Roasting Room website is designed, developed and hosted by Yajat Dureja, Vivek Goyal, Yajur Harit, Vrinda Verma</a></p>
         </div>
     </section>
     <!-- footer Section Ends Here -->
